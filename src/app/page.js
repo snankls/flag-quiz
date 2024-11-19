@@ -1,12 +1,13 @@
 "use client";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 const flag = [
-  { country: "India", flag: "🇮🇳" },
-  { country: "France", flag: "🇫🇷" },
-  { country: "United States", flag: "🇺🇸" },
-  { country: "Japan", flag: "🇯🇵" },
-  { country: "Pakistan", flag: "🇵🇰" },
+  { country: "India", flag: "/assets/images/india.svg" },
+  { country: "France", flag: "/assets/images/france.svg" },
+  { country: "United States", flag: "/assets/images/usa.svg" },
+  { country: "Japan", flag: "/assets/images/japan.svg" },
+  { country: "Brazil", flag: "/assets/images/brazil.svg" },
 ];
 
 export default function FlagQuiz() {
@@ -61,7 +62,12 @@ export default function FlagQuiz() {
       ) : (
         <div>
           <h2>What country does this flag belong to?</h2>
-          <div style={{ fontSize: "100px" }}>{currentFlag.flag}</div>
+          <Image
+            src={currentFlag.flag}
+            alt={`Flag of ${currentFlag.country}`}
+            width={100}
+            height={100}
+          />
           <div>
             {options.map((option) => (
               <button
