@@ -25,3 +25,22 @@ body {
     text-wrap: balance;
   }
 }
+
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+button {
+  background-color: gray;
+  border-radius: 5px;
+  color: #fff !important;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}

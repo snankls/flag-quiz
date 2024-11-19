@@ -1,0 +1,174 @@
+/*** MERN Task Style ***/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #333;
+}
+
+h4 {
+	line-height: 1.5;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.page-wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 100px 0;
+}
+
+.shop-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.shop-item {
+	border: 1px solid #e8e8e8;
+	flex-basis: calc(25% - 20px);
+}
+
+.shop-item .image {
+	background-color: rgba(34,34,34, 0.03);
+}
+
+.shop-item .inner-box {
+	background-color: #fff;
+}
+
+.shop-item .image img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.shop-item .lower-content {
+	padding: 20px;
+}
+
+.shop-item .lower-content h4 a {
+	color: #000;
+	text-decoration: none;
+}
+
+.price-rating {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 10px;
+}
+
+.price {
+	color: #eb292c;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.rating {
+	color: #FFA500;
+	font-size: 22px;
+	margin-top: -5px;
+}
+
+.read-more {
+	display: inline-block;
+	margin-top: 15px;
+	padding: 10px 20px;
+	color: #fff;
+	background-color: #eb292c;
+	font-size: 13px;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.read-more:hover {
+	background-color: #c02426; /* Slightly darker shade for hover effect */
+}
+
+.options-box {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.productCounter {
+	margin-top: 15px;
+}
+
+.productCounter button {
+	background: #eb292c;
+	color: #fff;
+	margin: 0 5px;
+	padding: 3px 10px;
+	display: inline-block;
+}
+
+.productCounter input {
+	border: 1px solid #333;
+	text-align: center;
+	width: 30px;
+}
+
+@media (max-width: 992px) {
+    .shop-item {
+        flex-basis: calc(33.333% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .shop-item {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 576px) {
+    .shop-container {
+        gap: 10px;
+    }
+    .shop-item {
+        flex-basis: 100%;
+    }
+}
+
+.heading {
+	font-size: 30px;
+	font-weight: 600;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.galleryContainer {
+	max-width: 300px;
+	border: 2px solid #000;
+	background: #333;
+	margin: 0 auto;
+}
+
+.galleryContainer .arrows {
+	text-align: center;
+}
+
+.galleryContainer .arrows span {
+	border: 1px solid #fff;
+	color: #fff;
+	margin: 0 5px;
+	padding: 3px 10px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.galleryContainer .pagination {
+	color: #fff;
+	text-align: center;
+	margin: 5px 0;
+}
